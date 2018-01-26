@@ -1,0 +1,96 @@
+html {
+	background-color: white;
+
+}
+
+body {
+	color: #333;
+	width: 70%;
+	margin: 0 auto;
+	font-family: Georgia, "Times New Roman", serif;
+
+	
+}
+h1 {
+	font-size: 1em;
+	text-align: center;
+	margin-top: 30px;
+	display: block;
+}
+
+h2 {
+	font-size: 0.7em;
+	font-weight: bold;
+	text-align: left;
+	display: block;
+}
+
+h3 {
+	text-align: left;
+	display: block;
+
+}
+
+h4 {
+	text-align: left;
+	font-size: 12px;
+	display: block;
+}
+h5 {
+	text-align: center;
+	display: block;
+	font-size: 1em;
+}
+#img {
+	display: block;
+	text-align: center;
+}
+article {
+	text-align: justify;
+	font-size: 1em;
+	width: 70%
+	margin: 0 auto;
+
+}
+
+#Recomendation{ 
+text-decoration: none;
+color: blue ;
+display: inline;
+
+}
+
+#caption {
+	display: block;
+	font-size: 10px;
+	color: grey;
+	text-align: center;
+}
+
+a:hover {
+	color: green;
+}
+
+li a {
+	color: #333;
+	text-decoration: none;
+	text-align: center;
+}
+
+.aside {
+	display: block;
+	font-size: 12px;
+}
+
+li {
+	display: inline-block;
+	padding-left: 35px;
+	text-align: center;
+}
+#nav a {
+	display: block;
+	text-align: center;
+	padding-bottom: 40px;
+	color: #333;
+
+}
