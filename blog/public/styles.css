@@ -1,0 +1,150 @@
+
+
+/*______________________GLOBAL */
+
+body {
+	background-color: white;
+	font-family:  sans-serif;
+	margin: 0px;
+}
+
+
+/*_________HEADING  and PICTURE*/
+
+h1 {
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    width:  80%;
+    margin:  0 auto;
+    padding-top:  15px;
+    padding-bottom:  15px;
+    text-align: center;
+    text-transform:  uppercase;
+}
+
+
+div #pic {
+    width: 90%
+    
+}
+
+img {
+    margin: 15px 10%;
+    width:  80%;
+}
+
+
+/*________________________CONTENT*/
+
+
+div#content {
+    padding: 15px 10%;
+}
+
+
+#content p {
+    border-bottom: 1px dashed #646464;
+    padding-bottom:  15px;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+#content p:last-child {
+    border-bottom: 0px dashed #646464;
+    padding-bottom:  15px;
+}
+
+#content {
+    background-color: #e1feff;
+    box-shadow: 0px 0px 14px -3px #0000004d;
+}
+
+h2 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    
+}
+
+
+
+/*________________________COMMENTS*/
+
+#deletebtn {
+    border-bottom:  1px solid black;
+    padding-bottom: 20px;
+}
+
+
+div#comments {
+    margin:  12.5%;
+    margin-top: 5%;
+}
+
+p.comment {
+	font-weight: 100;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+span#date {
+    font-size:  11px;
+    color:  grey;
+}
+
+h5 {
+
+    font-weight: 600;
+    font-size: 13px;
+}
+
+
+#comments h2 {
+    text-align:  center;
+}
+
+form.deletebtn {
+    border-bottom:  1px solid black;
+    padding-bottom:  15px;
+}
+
+
+
+/*________________FORM FOR COMMENTS*/
+
+
+.container h4 {
+    text-align:  center;
+    color: #3e3d3d;
+    margin:  10px;
+}
+
+
+#comments h2 {
+    text-align:  center;
+}
+
+div#comments {
+    margin-top: 5%;
+}
+
+fieldset {
+    border:  none;
+}
+
+form {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+label {
+    margin: 10px;
+    font-weight: 100;
+    font-size: 13px;
+}
+

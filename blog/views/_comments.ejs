@@ -1,0 +1,55 @@
+
+
+<h2>Comments</h2>
+
+
+
+
+
+			<% for(let i in result.rows) { %>
+			
+				<h5 class="title">   <%= result.rows[i].title %>  </h5>
+				<h5 class="name">  <%= result.rows[i].name %>   <span id="date"> <%= result.rows[i].date %> </span> </h5>
+				<p class="comment" id="field"> <%= result.rows[i].body %>  </p>
+
+
+				<form method="POST" action='/delete/comment/<%= result.rows[i].id %>' class="deletebtn">
+				
+				<button class="btn-delete"> delete </button> 
+
+				</form>
+
+		
+			<% } %>
+
+
+
+
+
+		<div id="commentForm">
+	<form method="POST" action="/add">
+
+	<div class="container">
+		<h4> Leave a comment... </h4>
+
+		<fieldset>
+			<label>Name:</label>
+			<input type="text" name="name">
+		</fieldset>		
+
+		<fieldset>
+			<label>Title:</label>
+			<input type="text" name="title">
+		</fieldset>
+
+		<fieldset id="resize">
+			<label>Comment:</label>
+			<input type="text" name="body">
+		</fieldset>
+
+		<fieldset>
+			<button class="btn-post">post</button>
+		</fieldset>
+	</div>
+	</form>
+</div>
