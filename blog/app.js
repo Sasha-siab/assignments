@@ -76,6 +76,16 @@ client.connect()
 
 
 
+// DELETE BTN FOR _COMMENT.EJS FILE IN CASE I NEED IT
+
+//         <form method="POST" action='/delete/comment/<%= result.rows[i].id %>' class="deletebtn">
+        
+//         <button class="btn-delete"> delete </button> 
+
+//         </form>
+
+
+
 
 
 

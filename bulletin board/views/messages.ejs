@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Messages Board</title>
+	<title>Notes</title>
 	<link rel="stylesheet" type="text/css" href="../styles.css">
 </head>
 
 <body>
-	<h1>Messages</h1>
+	<div id="top">
+	<span id="heading">cool things to do:</span>
 
-	<a href="add-message.html"> <button class="btn-add"> add message </button> </a>
+	<a href="add-message.html"> <button class="btn-add"> <h3>+</h3> </button> </a>
+	</div>
 
-		<table>
-	
+		
+     <% for(let i in result.rows) { %>
+<ul>
+  <li>
+  	
+    <a href="#">
 
-			<tr>
-			
-				<th>title:</th>
-				<th>message:</th>
-			</tr>
+      <h3> <%= result.rows[i].title %>  </h2>
+      	<hr>
+       <p> <%= result.rows[i].body %> </p>
+      	
 
-			<% for(let i in result.rows) { %>
-			<tr>
-				<td> <%= result.rows[i].title %> </td>
-				<td> <%= result.rows[i].body %> </td>
-
-
-				<form method="POST" action='/delete/message/<%= result.rows[i].id %>'>
+      	<form method="POST" action='/delete/message/<%= result.rows[i].id %>'>
 				<td> <button class="btn-delete"> delete </button> </td></form>
-
-			</tr>
-			<% } %>
-
-		</table>
-
-
-
-
+    </a>
+  </li>
+</ul>
+	<% } %>
 
 
 </body>

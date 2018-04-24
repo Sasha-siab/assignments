@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add Message</title>
+	<title>Add Note</title>
 	<link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
@@ -9,21 +9,29 @@
 	<form method="POST" action="/add">
 
 	<div class="container">
-		<h1>new message</h1>
+
+
+<div id="top">
+    <span id="heading">What is next?</span>
+</div>
+
+
+
 
 		<fieldset>
-			<label>title:</label>
+			<label>When:</label>
 			<input type="text" name="title">
 		</fieldset>
 
-		<fieldset>
-			<label>message:</label>
+		<fieldset id="what">
+			<label>What:</label>
 			<input type="text" name="body">
 		</fieldset>
+		<button class="btn-add-new"><h3>make new note</h3></button>
 
-		<fieldset>
-			<button class="btn-add">send</button>
-		</fieldset>
+
+		
+
 	</form>
 	</div>
 

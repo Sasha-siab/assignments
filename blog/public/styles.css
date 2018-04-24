@@ -74,11 +74,15 @@ h2 {
 
 /*________________________COMMENTS*/
 
-#deletebtn {
-    border-bottom:  1px solid black;
+p#field {
+    border-bottom: 1px solid black;
     padding-bottom: 20px;
 }
 
+#recentComments {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
 
 div#comments {
     margin:  12.5%;
@@ -147,4 +151,49 @@ label {
     font-weight: 100;
     font-size: 13px;
 }
+
+
+input#post {
+    width: 70%;
+    height: 60px;
+    resize:  none;
+}
+
+
+div#textArea {
+    width:  80%;
+    margin:  0 auto;
+    text-align:  center;
+}
+
+input[type="text"] {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    height:  25px;
+    text-transform:  capitalize;
+    letter-spacing:  1px;
+    font-family:  sans-serif;
+}
+
+/*________________________BUTTON POST*/
+
+button.btn-post {
+    height:  30px;
+    width:  60px;
+    border-radius:  10px;
+    margin:  0 auto;
+    display:  block;
+    background: #e1feff;
+    text-transform: capitalize;
+    font-family:  sans-serif;
+    letter-spacing: 1px;
+}
+
+
+button.btn-post:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+
 
