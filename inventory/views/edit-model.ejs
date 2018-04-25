@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Model Information</title>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+
+
+ <h1>Paymore Inc. | Shoes Inventory</h1>
+ <hr>
+
+
+	<h3>Edit Model Information</h3>
+
+	<div id="box">
+
+	<form method="POST" action="/update">
+        <label>Model:</label>
+		<input type="text" name="name" value="<%= row.dataValues.name %>"  id="textarea">
+		<br>
+		<label>Material:</label>
+		<input type="text" name="material" value="<%= row.dataValues.material %>"  id="textarea">
+		<br>
+		<label>Color:</label>
+	    <input type="text" name="color" value= "<%= row.dataValues.color %>"  id="textarea" >
+	    <br>	
+	    <div id="integer" class="edit"> 
+	      <label>Size:</label>
+	      <input type="integer" name="size" value=" <%= row.dataValues.size %> " > 
+	      <label>Qty:</label>
+	      <input type="integer" name="qty" value= " <%= row.dataValues.qty %>" >
+	      <label>Id:</label>
+	      <input type="integer" name="id" value="<%= row.dataValues.id %>" >
+	    </div>
+	
+	   <button id="btn-add" class="button" style="vertical-align:middle"><span>Update</span></button>
+
+
+	</form>
+
+    </div>
+
+</body>
+</html>
+
+

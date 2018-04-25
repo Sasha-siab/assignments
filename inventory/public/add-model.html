@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Add New Model</title>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+
+	 <h1>Paymore Inc. | Shoes Inventory</h1>
+	 <hr>
+
+
+	<h3>Add New Model</h3>
+
+	<div id="box">
+
+	<form method="POST" action="/add">
+		<input type="text" name="name" id="textarea" class="add" placeholder="Name">
+		<br>
+		<input type="text" name="material" id="textarea" class="add" placeholder="Material">
+		<br>
+	    <input type="text" name="color"  id="textarea" class="add" placeholder="Color">
+	    <br>
+	    <div id="integer" class="add">
+	      <input type="integer" name="size" placeholder="Size">
+	      <input type="integer" name="qty" placeholder="Qty">
+	    </div>
+	 
+
+	    <button id="btn-add" class="button" style="vertical-align:middle"><span>Submit</span></button>
+
+	</form>
+
+	</div>
+
+</body>
+</html>
+

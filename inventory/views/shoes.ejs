@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paymore Inc. | Shoes Inventory </title>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+	<div id="wrapper">
+		 <h1>Paymore Inc. | Shoes Inventory</h1>
+		 <hr>
+		<a href="add-model.html"> <button class="button" id="add" style="vertical-align:middle"><span>Add New</span></button> </a>
+	
+
+
+<table>
+  <tr>
+
+    <th>Model</th>
+    <th>Material</th>
+    <th>Size</th>
+    <th>Color</th>
+    <th>Qty</th>
+    <th colspan="2">Action</th>
+
+  </tr>
+
+  <tr>
+  	 <% for (i in rows) { %>
+
+    <td> <%= rows[i].dataValues.name %> </td>
+    <td> <%= rows[i].dataValues.material %> </td>
+    <td> <%= rows[i].dataValues.size %> </td>
+    <td> <%= rows[i].dataValues.color %> </td>
+    <td> <%= rows[i].dataValues.qty %> </td>
+    <td>	
+    	<form method="POST" action="/edit/<%= rows[i].dataValues.id %>">
+	      <button class="button" style="vertical-align:middle"><span>Edit </span> </button>
+        </form>
+    </td>
+    <td>
+
+        <form method="POST" action="/delete/<%= rows[i].dataValues.id %>">
+	      <button class="button" style="vertical-align:middle"><span>Delete </span></button>
+        </form>
+     </td>
+ 
+  </tr>
+
+
+
+
+<%  } %>
+
+</div>
+
+
+</body>
+</html>

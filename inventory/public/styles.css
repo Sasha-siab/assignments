@@ -1,0 +1,213 @@
+
+/*______________________________GLOBAL*/
+
+
+/*______________________________HEADER*/
+
+h1 {
+    text-align:  center;
+    width:  40%;
+    margin: 2em auto;
+    color:  lightseagreen;
+    font-family:  raleway;
+    letter-spacing:  1px;
+}
+
+h3 {
+    text-align:  center;
+    width:  40%;
+    margin: 2em auto;
+    color:  lightseagreen;
+    font-family:  raleway;
+    letter-spacing:  1px;
+
+}
+
+
+hr {
+    width:  60%;
+    margin: 0 auto;
+    box-shadow: 1px 0px 0px 0px darkslategrey;
+}
+
+
+/*______________________________BUTTONS*/
+
+.button{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4097b5;
+  border: none;
+  text-align: center;
+  font-size: 13px;
+  padding: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.3s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+button.button{
+    width:  5em;
+    height:  2em;
+}
+
+
+#add {
+    margin:  0 auto; 
+    display: block;
+    margin: 1em auto;
+    width:  6em;
+    height:  2em;
+}
+
+
+
+/*______________________________TABLE*/
+
+table {
+    font-family: raleway;
+    border-collapse: collapse;
+    width: 100%;
+    width:  55%;
+    margin:  1em auto;
+}
+
+
+table th {
+    padding-bottom:  1em;
+    padding-top:  1em;
+    background-color: #4097b5;
+    border-bottom: 1px solid #163742;
+}
+
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #c0dde7;
+}
+
+td {
+    padding-bottom: 1em;
+    padding-top:  1em;
+       text-transform: capitalize;
+}
+
+th {
+	text-align: center;
+}
+
+
+
+/*____________________________________FORM*/
+
+div#box {
+    width:  55%;
+    margin:  o auto;
+    margin: auto;
+}
+
+form {
+    margin-left: 20%;
+}
+
+input[type="integer"] {
+    margin-right:  1em;
+}
+
+input[type=text] {
+    width: 55%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#box {
+    border-radius: 5px;
+    background-color: #c0dde7;
+    padding: 20px;
+}
+
+input[type=integer] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+/*______________________________EDIT FORM*/
+
+div#integer.edit {
+    margin-left:  -2em;
+}
+
+
+
+/*______________________________ADD FORM*/
+
+
+button#btn-add {
+    margin: 2em 30%;
+}
+
+
+input#textarea.add {
+    margin-left: 5em;
+}
+
+
+div#integer.add {
+    margin-left: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
