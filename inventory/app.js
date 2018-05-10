@@ -5,6 +5,8 @@ const Sequelize = require('sequelize');
 
 const app = express();
 
+let message = "";
+
 
 
 //____________________________________CREATE A DATABASE
@@ -64,6 +66,31 @@ sequelize.sync()
 
 
 
+//____________________________________SEARCH A MODEL
+
+app.get('/search', (req, res)=>{
+	let s = req.query.search
+	Shoe.findAll({
+		where: 
+		{
+			name:
+			{
+				$iLike: `${s}`
+			}
+		}
+	})
+	.then(rows =>{
+		if(rows == ""){
+			return res.render('shoes', {rows, message: "Not found"})
+		}
+
+		return res.render('shoes', {rows, message})
+	})
+})
+
+
+
+
   
 
 app.use(express.static('public'));
@@ -80,7 +107,7 @@ app.get('/', (req, res)=>{
 	return rows;
 })
 	.then((rows)=>{
-		return res.render('shoes', {rows})
+		return res.render('shoes', {rows, message})
 	})
 })
 

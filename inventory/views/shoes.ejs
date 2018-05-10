@@ -3,12 +3,20 @@
 <head>
 	<title>Paymore Inc. | Shoes Inventory </title>
 	<link rel="stylesheet" type="text/css" href="/styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
 	<div id="wrapper">
 		 <h1>Paymore Inc. | Shoes Inventory</h1>
 		 <hr>
 		<a href="add-model.html"> <button class="button" id="add" style="vertical-align:middle"><span>Add New</span></button> </a>
+
+<div id="containerA">
+  
+    <div id="src"> <form method="GET" action="/search" id="search-form"> <input type="text" name="search" placeholder="Search" id="search-input"><button class="button" id="search-btn" style="vertical-align:middle"><span> <i class="fa fa-search"></i> </span> </button>
+    </form> </div>
+
+    <p> <%= message %> </p>  
 	
 
 
@@ -34,13 +42,13 @@
     <td> <%= rows[i].dataValues.qty %> </td>
     <td>	
     	<form method="POST" action="/edit/<%= rows[i].dataValues.id %>">
-	      <button class="button" style="vertical-align:middle"><span>Edit </span> </button>
+	      <button class="button" id="table-btn" style="vertical-align:middle"><span>Edit </span> </button>
         </form>
     </td>
     <td>
 
         <form method="POST" action="/delete/<%= rows[i].dataValues.id %>">
-	      <button class="button" style="vertical-align:middle"><span>Delete </span></button>
+	      <button class="button" id="table-btn" style="vertical-align:middle"><span>Delete </span></button>
         </form>
      </td>
  
@@ -50,6 +58,8 @@
 
 
 <%  } %>
+
+</div>
 
 </div>
 

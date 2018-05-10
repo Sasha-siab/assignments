@@ -2,6 +2,11 @@
 /*______________________________GLOBAL*/
 
 
+body {
+    margin-bottom:  10em;
+}
+
+
 /*______________________________HEADER*/
 
 h1 {
@@ -28,6 +33,17 @@ hr {
     width:  60%;
     margin: 0 auto;
     box-shadow: 1px 0px 0px 0px darkslategrey;
+}
+
+/*_________________________________SEARCH*/
+
+div#containerA {
+    margin:  0 auto;
+    width:  60%;
+}
+
+button#search-btn {
+    margin-left:  10px;
 }
 
 
@@ -87,12 +103,17 @@ button.button{
 
 
 
+button#table-btn {
+    margin-right: 2em;
+}
+
+
+
 /*______________________________TABLE*/
 
 table {
     font-family: raleway;
     border-collapse: collapse;
-    width: 100%;
     width:  55%;
     margin:  1em auto;
 }
