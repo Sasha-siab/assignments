@@ -1,0 +1,71 @@
+   
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Outfit</title>
+	</head>
+	<body>
+
+   <h1> LOGO </h1>
+
+ 
+<% if (username !== "") { %>
+<h4>Thanks for shopping with us, <%= username %>
+<% } else { %>
+<h4>Thanks for shopping with us!<%= username %>
+	<% } %>
+	<br>
+	<br>
+
+<% if (shoes !== "") { %>
+<label> Shoes: </label> <%= shoes %> 
+
+
+<br>
+<% } %>
+
+<% if (bags !== "") { %>
+<label> Bags: </label> <%= bags %> 
+
+<br>
+<% } %>
+
+<% if (pants !== "") { %>
+<label> Pants: </label> <%= pants %> 
+
+<br>
+<% } %>
+
+<% if (shirts !== "") { %>
+<label> Shirts: </label> <%= shirts %> 
+
+<br>
+<% } %>
+<br>
+<br>
+
+<a href="/">
+   <button> Back to shopping </button>
+</a>
+
+<a href="/">
+   <button> Checkout </button>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+   <h1>FOOTER</h1>
+	
+	</body>
+	</html>
+
+
+

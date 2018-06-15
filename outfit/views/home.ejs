@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Outfit</title>
+</head>
+<body>
+
+	<h1> LOGO </h1>
+
+   	<form method="POST" action="/order">
+
+	<label>Username:</label> 
+    <input type="text" name="username">
+
+     <fieldset>
+	<label>Shoes</label>
+	<select name="shoes"> 
+		<option></option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		</select>
+    </fieldset>
+
+      <fieldset>
+	  <label>Bags</label>
+	  <select name="bags"> 
+		<option></option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		</select>
+    </fieldset>
+
+    <fieldset>
+	<label>Pants</label>
+	<select name="pants"> 
+		<option></option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		</select>
+    </fieldset>
+
+     <fieldset>
+	<label>Shirt</label>
+	<select name="shirts"> 		
+		<option></option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		</select>
+    </fieldset>
+
+     <button>Order</button> 
+   </form>
+
+
+   <div id="history">
+
+   	<h3>Order History</h3>
+
+   	  	
+<div> Your last order on :    </div>
+<% if (shoes !== 0) { %>
+<label> Shoes: </label> <%= shoes %> 
+
+
+<br>
+<% } %>
+
+<% if (bags !== 0) { %>
+<label> Bags: </label> <%= bags %> 
+
+<br>
+<% } %>
+
+<% if (pants !== 0) { %>
+<label> Pants: </label> <%= pants %> 
+
+<br>
+<% } %>
+
+<% if (shirts !== 0) { %>
+<label> Shirts: </label> <%= shirts %> 
+
+<br>
+<% } %>
+   
+  
+   </div>
+
+   <h1>FOOTER</h1>
+
+
+
+
+
+</body>
+</html>
